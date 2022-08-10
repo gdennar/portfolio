@@ -383,6 +383,23 @@ body{
     cursor: pointer;
 }
 
+footer{
+    background-color: var(--background-color);
+    -moz-box-shadow: 0 0 10px rgba(204, 204, 204, 0.433);
+    -webkit-box-shadow: 0 0 10px rgba(204, 204, 204, 0.433);
+    box-shadow: 0 0 10px rgba(204, 204, 204, 0.433);
+    padding-top: 8px;
+}
+
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    font-weight: 100;
+    font-size: 13px;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .main-container::-webkit-scrollbar {
     display: none;
@@ -459,6 +476,39 @@ body{
 
 @media (max-width: 565px){
     .main-container .about-container{
-        height: 790px;
+        height: 990px;
+        width: 100%;
+    }
+
+    .about-content{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    body{
+        padding: 10px;
+    }
+
+    .wrapper{
+        height: calc(100vh - 20px);
+    }
+
+    .mobile-nav{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: calc(100vw - 20px);
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
+
+@media (max-width: 425px){
+
+    .main-container{
+        width: 100%;
+        margin-top: 70px;
+    }
+
+}
+
