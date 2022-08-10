@@ -13,6 +13,7 @@ function openNav(){
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("mobile-sideNav").style.zIndex="99";
     document.getElementById("main").style.background="none";
     document.getElementById("main").style.opacity="1";
     var element = document.querySelectorAll(".skill-items");
